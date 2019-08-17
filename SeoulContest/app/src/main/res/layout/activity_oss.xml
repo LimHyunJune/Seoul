@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OSSActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_gray">
+        <TextView
+            android:layout_marginLeft="17dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/bmjua"
+            android:textStyle="bold"
+            android:text="OSS Notice - Seoul Treasure "/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        tools:text="This application is Copyright © S2D5. All rights reserved.
+The following sets forth attribution notices for third party software that may be contained in this application.
+\n\n
+If you have any questions or concerns, please contact us
+ \n\ndeveloper@s2d5.com"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/ossitem"
+        android:id="@+id/ossrv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

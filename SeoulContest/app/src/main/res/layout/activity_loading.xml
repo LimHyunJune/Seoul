@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".LoadingActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center"
+        android:text="Seoul Treasure!"
+        android:textColor="@color/color_white"
+        android:textSize="40dp" />
+
+
+    <ImageView
+    android:layout_width="98dp"
+    android:layout_height="127dp"
+    android:src="@drawable/ic_accessibility_light_green_900_24dp" />
+
+
+    <ImageView
+        android:layout_gravity="bottom|end"
+        android:layout_width="98dp"
+        android:layout_height="127dp"
+        android:src="@drawable/ic_accessibility_purple_500_24dp" />
+
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="98dp"
+        android:layout_height="127dp"
+        android:src="@drawable/ic_accessibility_yellow_a200_24dp" />
+
+
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_width="98dp"
+        android:layout_height="127dp"
+        android:src="@drawable/ic_accessibility_red_400_24dp" />
+
+
+
+
+</FrameLayout>
+
+
+</LinearLayout>

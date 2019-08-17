@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "470537711929",
+    "firebase_url": "https://seoul-cd311.firebaseio.com",
+    "project_id": "seoul-cd311",
+    "storage_bucket": "seoul-cd311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470537711929:android:42e76625fab62104",
+        "android_client_info": {
+          "package_name": "com.imukun.seoulcontest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470537711929-v5om2hr2jtuetm2ti139effumdki1l80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkyXdnbF34FJvZSf1WCc1XqTsssImofuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470537711929-v5om2hr2jtuetm2ti139effumdki1l80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp">
+
+
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="ACRA for Android&quot;"
+            android:id="@+id/ossname"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="  https://www.naver.com"
+            android:id="@+id/ossaddress"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+    Copyright 2010 Emmanuel Astier &amp;amp; Kevin Gaudin
+    Android - platform - development"
+            android:id="@+id/osscomment"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+    Copyright 2010 Emmanuel Astier &amp;amp; Kevin Gaudin
+    Android - platform - development"
+            android:id="@+id/osslicense"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
