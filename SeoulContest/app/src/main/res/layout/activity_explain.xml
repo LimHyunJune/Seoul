@@ -12,18 +12,39 @@
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
         android:textSize="25sp"
         android:fontFamily="@font/bmjua"
-        android:text="이 앱은 서울시의 각 명소를 직접 방문하며 방문한 명소의 수에 따라 생성되는 보물을 찾아 나서는 게임입니다.
+        android:text=" 지도에서 서울시 내의 명소 정보를 얻을 수 있습니다.
+        \n\n지도의 마커를 클릭하면 명소의 사진이 담긴 패널이 올라옵니다.
 
-\n\n각 유저의 명소 방문 기록 및 획득한 보물의 목록은 로그인시 열람 가능합니다.
-\n\n보물은 평소에는 지도에 표시되지 않으며 일정수의 방문기록을 넘어섰을 때 그에따른 보물이 지도 어딘가에 나타납니다.
+        \n\n 패널을 클릭하면 명소에 대한 설명과 방문하기 버튼이 생성 됩니다.
 
-\n\n따라서 많은 보물을 획득하기 위해서는 많은 명소를 방문해야 하며 이 게임을 통해 서울시에서 다양한 볼거리 및 체험을 하게 되는 것이 이 앱을 만든 취지입니다.
-\n\n 획득한 보물의 수에 따라 칭호를 획득하게 됩니다. 가장 높은 등급의 칭호는 [서울 사랑 시민] 입니다.
-\n\n각 명소의 방문은 위도 경도 기준 2도의 오차범위 안에서 인정되므로 해당 명소의 방문하기 버튼은 그 범위 안에서 눌러 주시기 바랍니다." />
+        \n\n
+" />
+    <TextView
+        android:textColor="	#FF4500"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="25sp"
+        android:fontFamily="@font/bmjua"
+        android:text="방문하기 버튼은 해당 지점에서 반경 50m이내에 접근 하였을 때 정상 작동 합니다.
+" />
+
+    <TextView
+        android:textColor="#FF8C00"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:textSize="25sp"
+        android:fontFamily="@font/bmjua"
+        android:text="\n\n일정 수 이상의 방문목록이 채워졌을 때 지도에 보물이 새롭게 표시 됩니다.
+\n\n보물을 수집하여 서울 사랑 시민이 되어보세요!" />
 
     <LinearLayout
         android:layout_width="match_parent"

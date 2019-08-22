@@ -46,52 +46,6 @@
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/color_gray"
-        android:orientation="vertical"
-        android:paddingLeft="13dp"
-        android:layout_marginTop="3dp"
-        android:id="@+id/ll_fvpcroom"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#000000"
-            android:text="보물 창고"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/bmjua"
-            />
-
-
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/color_gray"
-        android:orientation="vertical"
-        android:paddingLeft="13dp"
-        android:layout_marginTop="3dp"
-        android:id="@+id/ll_fvroute"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:textColor="#000000"
-            android:text="방문 장소 보기"
-            android:layout_marginTop="6dp"
-            android:fontFamily="@font/bmjua"
-            />
-
-
-
-
-    </LinearLayout>
 
 
 
@@ -168,6 +122,60 @@
             />
 
 
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_bomul"
+            android:gravity="center"
+            android:id="@+id/ll_fvpcroom"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:text="보물 창고"
+                android:textColor="@color/color_white"
+
+                android:textSize="50dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_route"
+            android:gravity="center"
+            android:id="@+id/ll_fvroute"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/bmjua"
+                android:gravity="center"
+                android:text="방문 목록"
+                android:textColor="@color/color_white"
+
+                android:textSize="50dp" />
+
+        </LinearLayout>
 
 
     </LinearLayout>

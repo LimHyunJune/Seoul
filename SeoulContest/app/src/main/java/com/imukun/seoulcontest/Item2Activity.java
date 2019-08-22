@@ -63,9 +63,9 @@ public class Item2Activity extends AppCompatActivity {
 
             if(count){
 
-                if(myLatLng.distanceTo(data.getLatLng())<=200)
+                if(myLatLng.distanceTo(data.getLatLng())<=50)
                 {pushbomul();}
-                else{
+               else{
                     Toast.makeText(Item2Activity.this, "해당 장소 근처가 아닙니다.", Toast.LENGTH_SHORT).show();
                     finish();
                 }
@@ -128,33 +128,12 @@ public class Item2Activity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         fUser=mAuth.getCurrentUser();
 
-        final LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        String provider = location.getProvider();
-        longitude = location.getLongitude();
-        latitude = location.getLatitude();
-        double altitude = location.getAltitude();
-
-        myLatLng = new LatLng(latitude,longitude);
-
-
-
-        lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                1000,
-                1,
-                gpsLocationListener);
-        lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
-                1000,
-                1,
-                gpsLocationListener);
-
-
-
-
-
 
         key = getIntent().getStringExtra("KEY");
+        longitude = getIntent().getDoubleExtra("myLng",0);
+        latitude = getIntent().getDoubleExtra("myLat",0);
+
+
 
 
 
@@ -210,28 +189,6 @@ public class Item2Activity extends AppCompatActivity {
 
         itemtv.setText(data.getComplex());
     }
-
-    final LocationListener gpsLocationListener = new LocationListener() {
-        public void onLocationChanged(Location location) {
-
-            String provider = location.getProvider();
-            double longitude = location.getLongitude();
-            double latitude = location.getLatitude();
-            double altitude = location.getAltitude();
-
-
-
-        }
-
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-        }
-
-        public void onProviderEnabled(String provider) {
-        }
-
-        public void onProviderDisabled(String provider) {
-        }
-    };
 
 
 

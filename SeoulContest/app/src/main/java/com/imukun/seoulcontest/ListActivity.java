@@ -128,12 +128,15 @@ public class ListActivity extends AppCompatActivity {
             grade.setText("서울 초보");
         }
         else if((1<= count) &&( count<2)){
-            grade.setText("서울 관심자");
+            grade.setText("서울 입문자");
         }
         else if((2<= count) && (count<3)){
             grade.setText("서울 전문가");
         }
-        else if((3<= count)){
+        else if((3<= count) && (count<4)){
+            grade.setText("서울 마스터");
+        }
+        else if(4<=count){
             grade.setText("서울 사랑 시민");
         }
 

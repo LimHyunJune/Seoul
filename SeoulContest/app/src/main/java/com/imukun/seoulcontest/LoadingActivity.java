@@ -52,7 +52,7 @@ public class LoadingActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setTitle("알림")
-                .setMessage("설명을 위한 창으로 넘어갑니다.\n\n동의 하시겠습니까?")
+                .setMessage("설명을 위한 화면으로 넘어갑니다.\n\n동의 하시겠습니까?")
                 .setPositiveButton("확인", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

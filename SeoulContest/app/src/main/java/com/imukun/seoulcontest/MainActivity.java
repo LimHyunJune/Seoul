@@ -115,10 +115,13 @@ public class MainActivity extends BaseActivity {
         if(v.equals(flPanel)){
 
 
-            if(TAG.equals("-Kuod5lPhqU6951")||TAG.equals("-Kuod5lPhqU6656")||TAG.equals("-Kuod5lPhqU6660")||TAG.equals("-Kuod5lPhqU6666"))
+            if(TAG.equals("-Kuod5lPhqU0001")||TAG.equals("-Kuod5lPhqU0002")||TAG.equals("-Kuod5lPhqU0003")||TAG.equals("-Kuod5lPhqU0004")||
+                    TAG.equals("-Kuod5lPhqU0005"))
             {
                 Intent intent = new Intent(MainActivity.this, Item2Activity.class);
                 intent.putExtra("KEY",TAG);
+                intent.putExtra("myLat",myLatLng.latitude);
+                intent.putExtra("myLng",myLatLng.longitude);
 
                 startActivity(intent);
             }
@@ -126,6 +129,8 @@ public class MainActivity extends BaseActivity {
 
                 Intent intent = new Intent(MainActivity.this, ItemActivity.class);
                 intent.putExtra("KEY",TAG);
+                intent.putExtra("myLat",myLatLng.latitude);
+                intent.putExtra("myLng",myLatLng.longitude);
 
                 startActivity(intent);
 
@@ -411,10 +416,10 @@ public class MainActivity extends BaseActivity {
 
 //
 
-               if(key.equals("-Kuod5lPhqU6951")||key.equals("-Kuod5lPhqU6656")||key.equals("-Kuod5lPhqU6660")||key.equals("-Kuod5lPhqU6666"))
+               if(key.equals("-Kuod5lPhqU0001")||key.equals("-Kuod5lPhqU0002")||key.equals("-Kuod5lPhqU0003")||key.equals("-Kuod5lPhqU0004")||key.equals("-Kuod5lPhqU0005"))
                {
 
-                   if(check>=4 && key.equals("-Kuod5lPhqU6951"))
+                   if(check>=4 && key.equals("-Kuod5lPhqU0001"))
                {
                    marker.setIcon(grade6);
                    marker.setCaptionText(entry.getValue().getName());
@@ -424,7 +429,7 @@ public class MainActivity extends BaseActivity {
                    marker.setOnClickListener(markerClickListener);
                    marker.setTag(entry.getKey());
                }
-                   else if(check>=7 && key.equals("-Kuod5lPhqU6656"))
+                   else if(check>=7 && key.equals("-Kuod5lPhqU0002"))
                    {
                        marker.setIcon(grade6);
                        marker.setCaptionText(entry.getValue().getName());
@@ -434,7 +439,7 @@ public class MainActivity extends BaseActivity {
                        marker.setOnClickListener(markerClickListener);
                        marker.setTag(entry.getKey());
                    }
-                  else if(check>=9 && key.equals("-Kuod5lPhqU6660"))
+                  else if(check>=9 && key.equals("-Kuod5lPhqU0003"))
                    {
                        marker.setIcon(grade6);
                        marker.setCaptionText(entry.getValue().getName());
@@ -444,7 +449,17 @@ public class MainActivity extends BaseActivity {
                        marker.setOnClickListener(markerClickListener);
                        marker.setTag(entry.getKey());
                    }
-                 else if(check>=13 && key.equals("-Kuod5lPhqU6666"))
+                 else if(check>=13 && key.equals("-Kuod5lPhqU0004"))
+                   {
+                       marker.setIcon(grade6);
+                       marker.setCaptionText(entry.getValue().getName());
+                       marker.setCaptionColor(Color.BLUE);
+                       marker.setPosition(position);
+                       marker.setMap(mNaverMap);
+                       marker.setOnClickListener(markerClickListener);
+                       marker.setTag(entry.getKey());
+                   }
+                   else if(check>=16 && key.equals("-Kuod5lPhqU0005"))
                    {
                        marker.setIcon(grade6);
                        marker.setCaptionText(entry.getValue().getName());

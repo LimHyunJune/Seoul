@@ -104,7 +104,7 @@ public class UserActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     mUser = dataSnapshot.getValue(User.class);
-                    String email = mUser.getEmail().toString();
+                String email = mUser.getEmail().toString();
 
                     tvaccount.setText(email);
 
